@@ -19,6 +19,11 @@ The tags searched for to determine relevant documents are :
 'logistics','market','money','oil', 'price','property', 'share', 'stock', 'street', 'tax','tech', 'telecom',
 'trade','treasur','value','venture','wealth','wall','worth'
 
+
+The frequency of words in the relevant headlines are counted. The bar chart of top 10 words is,
+
+![](images/freq_topwords_headlines.png)
+
 # Further work
 
 * Collect archived news headlines from other sources which are relevant to S&P500
