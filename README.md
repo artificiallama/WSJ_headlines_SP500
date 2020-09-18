@@ -24,6 +24,10 @@ The frequency of words in the relevant headlines are counted. The bar chart of t
 
 ![](images/freq_topwords_headlines.png)
 
+Vader Sentiment analyser is used to calculate the sentiment score for each headline. This is annually averaged.
+
+![](images/annual_sentiment.png)
+
 # Further work
 
 * Collect archived news headlines from other sources which are relevant to S&P500
