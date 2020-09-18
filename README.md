@@ -13,6 +13,12 @@ The following shows the number of WSJ articles per year. The relevant articles a
 
 ![](images/narticles_2.png)
 
+The tags searched for to determine relevant documents are :
+'auto','bank','barron', 'business','capital','commod', 'commerce', 'corporate', 'earning','econom', 'energy', 'estate',
+'exchange' , 'executive','finance', 'fiscal', 'forex' , 'fund','gas','goldman', 'heard', 'industr', 'infra', 'insur', 'invest', 'innovation',
+'logistics','market','money','oil', 'price','property', 'share', 'stock', 'street', 'tax','tech', 'telecom',
+'trade','treasur','value','venture','wealth','wall','worth'
+
 # Further work
 
 * Collect archived news headlines from other sources which are relevant to S&P500
