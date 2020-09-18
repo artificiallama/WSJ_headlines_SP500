@@ -11,7 +11,7 @@ The sentiment index is calculated for headlines relevant to finance/stock market
 
 The following shows the number of WSJ articles per year. The relevant articles are those with tags pertaining to finance/stock (eg. money, market, wealth, stock, business etc).
 
-![](images/narticles.png)
+![](images/narticles_2.png)
 
 # Further work
 
