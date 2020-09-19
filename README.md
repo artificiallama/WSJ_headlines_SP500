@@ -28,7 +28,9 @@ Vader Sentiment analyser is used to calculate the sentiment score for each headl
 
 ![](images/annual_sentiment.png)
 
-This bar chart is compared to the S&P500 index over the same time period.
+This bar chart is compared to the S&P500 index over the similar time period (1998-2020).
+
+![](images/SP500_daily_close.png)
 
 # Further work
 
