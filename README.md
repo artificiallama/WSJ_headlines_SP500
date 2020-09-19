@@ -28,6 +28,8 @@ Vader Sentiment analyser is used to calculate the sentiment score for each headl
 
 ![](images/annual_sentiment.png)
 
+This bar chart is compared to the S&P500 index over the same time period.
+
 # Further work
 
 * Collect archived news headlines from other sources which are relevant to S&P500
