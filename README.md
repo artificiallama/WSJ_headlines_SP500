@@ -28,10 +28,10 @@ Vader Sentiment analyser is used to calculate the sentiment score for each headl
 
 ![](images/annual_sentiment.png)
 
-This bar chart is compared to the S&P500 index over the similar time period (1998-2020).
-
 ![](images/SP500_daily_close.png)   ![](images/annual_average_sp500.png)
 
+This bar chart is compared to the S&P500 index over the similar time period (1998-2020). The price movement is quantified by subtracting consecutive closing prices. The first entry corresponds to 1999 which is given by price(1999)-price(1998). The last entry corresponds to 2019 which is given by price(2019)-price(2018). 
+There exists a strong correlation between the sentiment index and the price movement. However this correlation is between the sentiment and price of the same year. The key question is : Does the sentiment index of a particular year correctly predict the movement for the next year ? 
 
 ![](images/sentiment_price.png) 
 
