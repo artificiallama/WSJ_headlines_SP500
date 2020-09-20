@@ -28,7 +28,7 @@ Vader Sentiment analyser is used to calculate the sentiment score for each headl
 
 ![](images/annual_sentiment.png)
 
-The following shows S&P500 index over same time period (1998-2020).
+The following shows S&P500 index over same time period (1998-2020). Comparing the above sentiment index bar chart to the following figure it is clear that the negative sentiment in years 2002 and 2008 correlates strongly with the price drop around the same point in time.
 
 ![](images/SP500_daily_close.png)   ![](images/annual_average_sp500.png)
 
