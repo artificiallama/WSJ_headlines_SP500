@@ -32,6 +32,9 @@ This bar chart is compared to the S&P500 index over the similar time period (199
 
 ![](images/SP500_daily_close.png)   ![](images/annual_average_sp500.png)
 
+
+![](images/sentiment_price.png) 
+
 # Further work
 
 * Collect archived news headlines from other sources which are relevant to S&P500
