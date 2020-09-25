@@ -52,6 +52,10 @@ The sentiment model uses the sentiment index for year N to predict the movement 
 
 ![](images/monthly_sentiment.png) 
 
+![](images/monthly_overlap.png) 
+
+
+
 # Further work
 
 * Collect archived news headlines from other sources which are relevant to S&P500
