@@ -48,6 +48,10 @@ The sentiment model uses the sentiment index for year N to predict the movement 
 
 
 
+# Monthly timescale
+
+![](images/monthly_sentiment.png) 
+
 # Further work
 
 * Collect archived news headlines from other sources which are relevant to S&P500
