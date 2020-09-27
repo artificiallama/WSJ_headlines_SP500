@@ -51,10 +51,22 @@ I have setup a baseline prediction model which uses only the timeseries of movem
 The sentiment model uses the sentiment index for year N to predict the movement for year N+1. If the sentiment is -ve (+ve) for year N then the prediciton is -ve movement (+ve movement) for the year N+1. The following table summarizes the results. The sentiment model has a marginal advantage over the baseline model. The sentiment model correctly predicts one year for which the baseline model fails. This year happens to be 2010.
 </p>
 
-| Model    |Correct predictions  | Wrong predictions |
-|----------|---------------------|-------------------|
-|Baseline  |   16                |    4              |
-|Sentiment |   17                |    3              |
+Confusion matrix (Baseline model) :
+
+|         |     |Pred|Pred|    | 
+|:-------:|:---:|:--:|:--:|:--:|
+|         |     | UP |DOWN|TOT | 
+|**TRUE** |UP   | 13 |  2 |15  |
+|**TRUE** |DOWN |  2 |  3 | 5  |
+
+
+Confusion matrix (Sentiment model) :
+
+|         |     |Pred|Pred|    | 
+|:-------:|:---:|:--:|:--:|:--:|
+|         |     | UP |DOWN|TOT | 
+|**TRUE** |UP   | 15 |  0 |15  |
+|**TRUE** |DOWN |  3 |  2 | 5  |
 
 
 
