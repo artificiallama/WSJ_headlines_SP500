@@ -70,3 +70,7 @@ The sentiment model uses the sentiment index for year N to predict the movement 
 
 * Collect archived news headlines from other sources which are relevant to S&P500
 * Rather than considering only the headline, process the whole article and flesh out sentences relevant to S&P500.
+
+# References
+https://towardsdatascience.com/stock-news-sentiment-analysis-with-python-193d4b4378d4
+https://towardsdatascience.com/sentiment-analysis-of-stocks-from-financial-news-using-python-82ebdcefb638
