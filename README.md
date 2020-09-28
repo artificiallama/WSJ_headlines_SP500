@@ -66,7 +66,7 @@ Confusion matrices :
 
 ## Backtrading (Annual timescale)
 
-I have used a basic trading algorithm. The trading starts in 1999. The first prediction is for year 2000. The last trade is in 2018 based on the prediction for 2019. In 2019 the stocks (if any) are sold and converted to cash. The first trade (1999) is either buying one stock of S&P500 or holding cash equivalent of one stock depending on if the prediction is positive price movement (UP) or negative price movement (DOWN). At any given year, for a given model if the prediction is UP for next year all cash is converted to stock. At any given year, for a given model if the prediction is DOWN for next year all stock is converted to cash. However, if the prediction of the model is the same as the last year, the positions are held. For example if the prediction is UP for a given year and if last year the prediction was also UP, then the stocks bought last year are held. The initial investment for all models is the price of stock in 1999.
+I have used a basic trading algorithm. The trading starts in 1999. The first prediction is for year 2000. The last trade is in 2018 based on the prediction for 2019. In 2019 the stocks (if any) are sold and converted to cash. The first trade (1999) is either buying one stock of S&P500 or holding cash equivalent of one stock depending on if the prediction is positive price movement (UP) or negative price movement (DOWN). At any given year, for a given model if the prediction is UP for next year all cash is converted to stock. At any given year, for a given model if the prediction is DOWN for next year all stock is converted to cash. However, if the prediction of the model is the same as the last year, the positions are held. For example if the prediction is UP for a given year and if last year the prediction was also UP, then the stocks bought last year are held. The initial investment for all models is the price of stock in 1999. This investment is $1327.3. The closing price in 2019 is $2913.4.
 
 The following models are used :
 * Sentiment : It uses the current sentiment index to predict the next year.
@@ -77,11 +77,11 @@ The following models are used :
 * DW model : It predicts all movements as DOWN.
 
 
-|           | sentiment |Baseline|Perfect | Imperfect | UP model | DW model |
-|:---------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
-|Cash       | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
-|Net Profit | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
-|%Net Profit|  190      |  148   | 405    | -56       |  119     | 0        |
+|                 | sentiment |Baseline|Perfect | Imperfect | UP model | DW model |
+|:---------------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
+|Cash   (USD)     | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
+|Net Profit (USD) | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
+|%Net Profit      |  190      |  148   | 405    | -56       |  119     | 0        |
 
 
 
