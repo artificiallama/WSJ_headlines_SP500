@@ -15,11 +15,11 @@ Packages used :
 * Beautifulsoup
 * Pandas
 
-The following shows the number of WSJ articles per year. The relevant articles are those with tags pertaining to finance/stock (eg. money, market, wealth, stock, business etc).
+The following shows the number of WSJ articles per year. The relevant articles are those with tags (categories) pertaining to finance/stock (eg. money, market, wealth, stock, business etc).
 
-![](images/narticles_2.png)
+![](images/narticles.png)
 
-The tags searched for to determine relevant documents are :
+The tags searched for to determine relevant headlines are :
 'auto','bank','barron', 'business','capital','commod', 'commerce', 'corporate', 'earning','econom', 'energy', 'estate',
 'exchange' , 'executive','finance', 'fiscal', 'forex' , 'fund','gas','goldman', 'heard', 'industr', 'infra', 'insur', 'invest', 'innovation',
 'logistics','market','money','oil', 'price','property', 'share', 'stock', 'street', 'tax','tech', 'telecom',
