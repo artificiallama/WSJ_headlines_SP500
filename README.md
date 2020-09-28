@@ -38,10 +38,9 @@ The following shows S&P500 index over same time period (1998-2020). Comparing th
 
 ![](images/SP500_daily_close.png)   ![](images/annual_average_sp500.png)
 
-<p align="justify" markdown="1">
+
 The time varying S&P500 price is converted to price movement (i.e. gradient). The price movement is quantified by subtracting consecutive closing prices. The first entry corresponds to 1999 which is given by price(1999)-price(1998). The last entry corresponds to 2019 which is given by price(2019)-price(2018). 
-There exists a strong correlation between the sentiment index and the price movement. However this correlation is between the sentiment and price of the same year. The key question is : __Does the sentiment index of a particular year correctly predict the movement for the next year ?__ One of the important predictions traders are interested in is whether the price increases or decreases in the future. They are also interested in the price in the future but minimally they are interested in knowing the movement which helps them to decide whether to go short or long in the stock. Apart from the sign of the gradient it is important to predict the magnitude of the gradient too. However in this work I have concentrated only on predicting the sign of the gradient (which though basic is a non-trivial problem).
-</p>
+There exists a strong correlation between the sentiment index and the price movement. However this correlation is between the sentiment and price of the same year. The key question is : **Does the sentiment index of a particular year correctly predict the movement for the next year ?** One of the important predictions traders are interested in is whether the price increases or decreases in the future. They are also interested in the price in the future but minimally they are interested in knowing the movement which helps them to decide whether to go short or long in the stock. Apart from the sign of the gradient it is important to predict the magnitude of the gradient too. The models in this work predict the sign of the gradient (which though basic is a non-trivial problem). Further backtrading is used to check which prediction model performs the best.
 
 ![](images/sentiment_price.png) 
 
@@ -51,7 +50,7 @@ I have setup a baseline prediction model which uses only the timeseries of movem
 The sentiment model uses the sentiment index for year N to predict the movement for year N+1. If the sentiment is -ve (+ve) for year N then the prediciton is -ve movement (+ve movement) for the year N+1. The following table summarizes the results. The sentiment model has a marginal advantage over the baseline model. The sentiment model correctly predicts one year for which the baseline model fails. This year happens to be 2010.
 </p>
 
-Confusion matrix (Baseline model) :
+Confusion matrices :
 
 |Baseline |     |Pred|Pred |    | 
 |:-------:|:---:|:--:|:--:|:--:|
@@ -59,14 +58,34 @@ Confusion matrix (Baseline model) :
 |**TRUE** |UP   | 13 |  2 |15  |
 |**TRUE** |DOWN |  2 |  3 | 5  |
 
-
-Confusion matrix (Sentiment model) :
-
 |Sentiment|     |Pred|Pred|    | 
 |:-------:|:---:|:--:|:--:|:--:|
 |         |     | UP |DOWN|TOT | 
 |**TRUE** |UP   | 15 |  0 |15  |
 |**TRUE** |DOWN |  3 |  2 | 5  |
+
+## Backtrading (Annual timescale)
+
+I have used a basic trading algorithm. The trading starts in 1999. The first prediction is for year 2000. The last trade is in 2018 based on the prediction for 2019. In 2019 the stocks (if any) are sold and converted to cash. The first trade (1999) is either buying one stock of S&P500 or holding cash equivalent of one stock depending on if the prediction is positive price movement (UP) or negative price movement (DOWN). At any given year, for a given model if the prediction is UP for next year all cash is converted to stock. At any given year, for a given model if the prediction is DOWN for next year all stock is converted to cash. However, if the prediction of the model is the same as the last year, the positions are held. For example if the prediction is UP for a given year and if last year the prediction was also UP, then the stocks bought last year are held. The initial investment for all models is the price of stock in 1999.
+
+The following models are used :
+* Sentiment : It uses the current sentiment index to predict the next year.
+* Baseline :  It uses the current movement as the prediction. It is also known as peristence.
+* Perfect  :  This is a hypothetical model. It correctly predicts all the movements.
+* Imperfect : This is a hypothetical model. It incorrectly predicts all the movements.
+* UP model : It predicts all movements as UP.
+* DW model : It predicts all movements as DOWN.
+
+
+|         | Cash |Net Profit|%Net Profit | 
+|:-------:|:----:|:--------:|:----------:|
+|Sentiment| 3860 |  2533    | 190.9      |
+|Baseline | 3293 |  1965    | 148.1      |
+|perfect  | 6712 |  5384    | 405.7      |
+|Imperfect| 576  |  -751    | -56.6      |
+|UP model | 2913 |  1586    | 119.5      |
+|DW model | 1327 |  0       | 0.0        |
+
 
 
 
