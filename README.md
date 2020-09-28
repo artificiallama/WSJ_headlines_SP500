@@ -77,14 +77,11 @@ The following models are used :
 * DW model : It predicts all movements as DOWN.
 
 
-|         | Cash |Net Profit|%Net Profit | 
-|:-------:|:----:|:--------:|:----------:|
-|Sentiment| 3860 |  2533    | 190.9      |
-|Baseline | 3293 |  1965    | 148.1      |
-|perfect  | 6712 |  5384    | 405.7      |
-|Imperfect| 576  |  -751    | -56.6      |
-|UP model | 2913 |  1586    | 119.5      |
-|DW model | 1327 |  0       | 0.0        |
+|           | sentiment |Baseline|Perfect | Imperfect | UP model | DW model |
+|:---------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
+|Cash       | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
+|Net Profit | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
+|%Net Profit|  190      |  148   | 405    | -56       |  119     | 0        |
 
 
 
