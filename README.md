@@ -77,11 +77,11 @@ The following models are used :
 * DW model : It predicts all movements as DOWN.
 
 
-|                 | sentiment |Baseline|Perfect | Imperfect | UP model | DW model |
-|:---------------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
-|Cash   (USD)     | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
-|Net Profit (USD) | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
-|%Net Profit      |  190      |  148   | 405    | -56       |  119     | 0        |
+|                   | sentiment |Baseline|Perfect | Imperfect | UP model | DW model |
+|:-----------------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
+|*Cash   (USD)*     | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
+|*Net Profit (USD)* | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
+|*%Net Profit*      |  190      |  148   | 405    | -56       |  119     | 0        |
 
 
 
@@ -103,3 +103,5 @@ The following models are used :
 https://towardsdatascience.com/stock-news-sentiment-analysis-with-python-193d4b4378d4
 
 https://towardsdatascience.com/sentiment-analysis-of-stocks-from-financial-news-using-python-82ebdcefb638
+
+https://medium.com/analytics-vidhya/simplifying-social-media-sentiment-analysis-using-vader-in-python-f9e6ec6fc52f
