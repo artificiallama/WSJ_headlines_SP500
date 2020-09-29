@@ -26,7 +26,7 @@ The tags searched for to determine relevant headlines are :
 'trade','treasur','value','venture','wealth','wall','worth'
 
 
-The frequency of words in the relevant headlines are counted. The bar chart of top 10 words is,
+The frequency of words in the relevant headlines are counted. The bar chart and wordcloud of top few words is shown below.
 
 ![](images/freq_topwords_headlines_perc.png)   ![](images/wordcloud_topwords.png)
 
