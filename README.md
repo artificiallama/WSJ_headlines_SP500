@@ -30,7 +30,7 @@ The frequency of words in the relevant headlines are counted. The bar chart of t
 
 ![](images/freq_topwords_headlines.png)
 
-Vader Sentiment analyser is used to calculate the sentiment score for each headline. The bar chart of annually averaged sentiment index is shown below.
+VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. The bar chart of annually averaged sentiment index is shown below.
 
 ![](images/annual_WSJ_sentiment.png)
 
@@ -77,11 +77,11 @@ The following models are used :
 * DW model : It predicts all movements as DOWN.
 
 
-|                   | sentiment |Baseline|Perfect | Imperfect | UP model | DW model |
-|:-----------------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
-|*Cash   (USD)*     | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
-|*Net Profit (USD)* | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
-|*%Net Profit*      |  190      |  148   | 405    | -56       |  119     | 0        |
+|                     | sentiment |Baseline|Perfect | Imperfect | UP model | DW model |
+|:-------------------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
+|**Cash   (USD)**     | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
+|**Net Profit (USD)** | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
+|**%Net Profit**      |  190      |  148   | 405    | -56       |  119     | 0        |
 
 
 
@@ -105,3 +105,5 @@ https://towardsdatascience.com/stock-news-sentiment-analysis-with-python-193d4b4
 https://towardsdatascience.com/sentiment-analysis-of-stocks-from-financial-news-using-python-82ebdcefb638
 
 https://medium.com/analytics-vidhya/simplifying-social-media-sentiment-analysis-using-vader-in-python-f9e6ec6fc52f
+
+Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
