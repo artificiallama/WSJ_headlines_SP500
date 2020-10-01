@@ -19,6 +19,8 @@ The following shows the number of WSJ articles per year. The relevant articles a
 
 ![](images/narticles_WSJ.png "Figure 1")
 
+<p>My <img src="images/narticles_WSJ.png" alt="foo bar" title="title" /></p>
+
 The tags searched for to determine relevant headlines are :
 'auto','bank','barron', 'business','capital','commod', 'commerce', 'corporate', 'earning','econom', 'energy', 'estate',
 'exchange' , 'executive','finance', 'fiscal', 'forex' , 'fund','gas','goldman', 'heard', 'industr', 'infra', 'insur', 'invest', 'innovation',
