@@ -18,7 +18,6 @@ Packages used :
 The following shows the number of WSJ articles per year. The relevant articles are those with tags (categories) pertaining to finance/stock (eg. money, market, wealth, stock, business etc).
 
 ![](images/narticles_WSJ.png)
-*FIGURE : The histogram*
 
 The tags searched for to determine relevant headlines are :
 'auto','bank','barron', 'business','capital','commod', 'commerce', 'corporate', 'earning','econom', 'energy', 'estate',
@@ -30,7 +29,7 @@ The tags searched for to determine relevant headlines are :
 The frequency of words in the relevant headlines are counted. The bar chart and wordcloud of top few words is shown below.
 
 ![](images/freq_topwords_headlines_perc.png)   ![](images/wordcloud_topwords.png)
-*FIGURE2 : The histogram*                           *FIGURE3 : The histogram*
+
 VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. The bar chart of annually averaged sentiment index is shown below.
 
 ![](images/annual_WSJ_sentiment.png)
