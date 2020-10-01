@@ -17,9 +17,8 @@ Packages used :
 
 The following shows the number of WSJ articles per year. The relevant articles are those with tags (categories) pertaining to finance/stock (eg. money, market, wealth, stock, business etc).
 
-![](images/narticles_WSJ.png "Figure 1")
-
-<p>My <img src="images/narticles_WSJ.png" alt="foo bar" title="title" /></p>
+!["figure1"](images/narticles_WSJ.png)
+*FIGURE : The histogram*
 
 The tags searched for to determine relevant headlines are :
 'auto','bank','barron', 'business','capital','commod', 'commerce', 'corporate', 'earning','econom', 'energy', 'estate',
