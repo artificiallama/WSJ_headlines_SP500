@@ -109,6 +109,8 @@ Confusion matrices :
 * Collect archived news headlines from other sources which are relevant to S&P500
 * Rather than considering only the headline, process the whole article and flesh out sentences relevant to S&P500.
 * Trace back the average negative (eg. 2002, 2008) and positive (2000, 2005, 2014) sentiments to particular news articles and ask the question - is this just luck or the headline had something to do with S&P500 ?
+* Predict and backtrade on daily timescale
+* Use another sentiment model (eg. FinBERT) - are the results consistent with those obtained ?
 
 # References
 https://towardsdatascience.com/stock-news-sentiment-analysis-with-python-193d4b4378d4
