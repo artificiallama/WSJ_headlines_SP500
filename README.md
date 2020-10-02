@@ -94,17 +94,12 @@ The accuracy of sentiment model is 0.62 and that of persistence model is 0.60.
 
 Confusion matrices :
 
-|Baseline |     |Pred|Pred  |    | Baseline |     |Pred|Pred  |    |
-|:-------:|:---:|:--:|:----:|:--:| :-------:|:---:|:--:|:----:|:--:|
-|         |     | UP  |DOWN |TOT |          |     | UP  |DOWN |TOT |
-|**TRUE** |UP   | 110 |  52 |162 | **TRUE** |UP   | 110 |  52 |162 |
-|**TRUE** |DOWN |  52 |  48 | 100| **TRUE** |DOWN |  52 |  48 | 100|
+|Baseline |     |Pred|Pred  |    | Sentiment |     |Pred |Pred  |    |
+|:-------:|:---:|:--:|:----:|:--:|:---------:|:---:|:---:|:----:|:--:|
+|         |     | UP  |DOWN |TOT |           |     | UP  |DOWN  | TOT |
+|**TRUE** |UP   | 110 |  52 |162 | **TRUE**  |UP   | 142 |  20  |162 |
+|**TRUE** |DOWN |  52 |  48 | 100| **TRUE**  |DOWN |  79 |  21  | 100|
 
-|Sentiment|     |Pred |Pred |    | 
-|:-------:|:---:|:---:|:---:|:--:|
-|         |     | UP  |DOWN |TOT | 
-|**TRUE** |UP   | 142 | 20  |162 |
-|**TRUE** |DOWN |  79 | 21  |100 |
 
 
 
