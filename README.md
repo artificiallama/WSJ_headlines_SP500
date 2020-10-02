@@ -79,12 +79,12 @@ Following table summarizes the performance of the models. Transaction costs are 
 
 
 |                     | *sentiment* |*Baseline*|Perfect | Imperfect | UP model | DW model |
-|:-------------------:|:---------:|:------:|:------:|:---------:|:--------:|:--------:|
-|**Cash   (USD)**     | 3860      |  3293  | 6712   | 576       | 2913     | 1327     |
-|**Net Profit (USD)** | 2533      |  1965  | 5384   | -751      | 1586     | 0        |
-|**%Net Profit**      |  190      |  148   | 405    | -56       |  119     | 0        |
+|:-------------------:|:-----------:|:--------:|:------:|:---------:|:--------:|:--------:|
+|**Cash   (USD)**     | 3860        |  3293    | 6712   | 576       | 2913     | 1327     |
+|**Net Profit (USD)** | 2533        |  1965    | 5384   | -751      | 1586     | 0        |
+|**% Net Profit**     |  190        |  148     | 405    | -56       |  119     | 0        |
 
-
+The sentiment model outperforms the baseline (persistence) model by about 42% in net profit. The perfect model performs the best by design. The buy and hold model returns 119%.
 
 
 # Monthly timescale
