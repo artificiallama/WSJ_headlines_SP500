@@ -88,7 +88,7 @@ The following models are used :
 
 # Monthly timescale
 
-![](images/monthly_sentiment.png)  ![](images/monthly_overlap.png) 
+![](images/monthly_sentiment.png)  ![](images/monthly_overlap_plot.png) 
 
 
 
