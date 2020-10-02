@@ -52,11 +52,11 @@ The sentiment model uses the sentiment index for year N to predict the movement 
 
 Confusion matrices :
 
-|**Baseline** |     |Pred|Pred |     |   |**Sentiment**|     |Pred|Pred|    | 
-|:-----------:|:---:|:--:|:---:|:---:|---|:-----------:|:---:|:--:|:--:|:--:|
-|             |     | UP |DOWN |TOT  |   |             |     | UP |DOWN|TOT | 
-|**TRUE**     |UP   | 13 |  2  |15   |   |**TRUE**     |UP   | 15 |  0 |15  |
-|**TRUE**     |DOWN |  2 |  3  | 5   |   |**TRUE**     |DOWN |  3 |  2 | 5  |
+|**Baseline** |     |Pred|Pred |     |      |**Sentiment**|     |Pred|Pred|    | 
+|:-----------:|:---:|:--:|:---:|:---:|------|:-----------:|:---:|:--:|:--:|:--:|
+|             |     | UP |DOWN |TOT  |      |             |     | UP |DOWN|TOT | 
+|**TRUE**     |UP   | 13 |  2  |15   |      |**TRUE**     |UP   | 15 |  0 |15  |
+|**TRUE**     |DOWN |  2 |  3  | 5   |      |**TRUE**     |DOWN |  3 |  2 | 5  |
 
 The sentiment model incorrectly predicts 3 downs as ups. The persistence model incorrectly predicts 2 ups and 2 downs. The following figures shows these misses. Both the models
 make wrong predictions about the downward movement in 2001 and 2008. The sentiment model incorrectly predicts the downward movement of 2002 as upward whose magnitude is -200 USD. The persistence model makes wrong prediction about 2004 and 2010 whose magnitudes are 165 and 191 USD. Thus not only is the sentiment model more correct than the persistence model in predicting the sign of movement but it also on balance turns out to be better in terms of magnitude. One would expect the sentiment model to perform better in a backtrading algorithm.
@@ -95,11 +95,11 @@ The accuracy of sentiment model is 0.62 and that of persistence model is 0.60.
 
 Confusion matrices :
 
-|**Baseline** |     |Pred|Pred  |    | **Sentiment** |     |Pred |Pred  |    |
-|:-------:|:---:|:--:|:----:|:--:|:---------:|:---:|:---:|:----:|:--:|
-|         |     | UP  |DOWN |TOT |           |     | UP  |DOWN  | TOT |
-|**TRUE** |UP   | 110 |  52 |162 | **TRUE**  |UP   | 142 |  20  |162 |
-|**TRUE** |DOWN |  52 |  48 | 100| **TRUE**  |DOWN |  79 |  21  | 100|
+|**Baseline** |     |Pred |Pred  |    |    |**Sentiment** |     |Pred |Pred  |     |
+|:-----------:|:---:|:---:|:----:|:--:|:--:|:------------:|:---:|:---:|:----:|:---:|
+|             |     | UP  |DOWN  |TOT |    |              |     | UP  |DOWN  | TOT |
+|**TRUE**     |UP   | 110 |  52  |162 |    |**TRUE**      |UP   | 142 |  20  |162  |
+|**TRUE**     |DOWN |  52 |  48  | 100|    |**TRUE**      |DOWN |  79 |  21  | 100 |
 
 
 
