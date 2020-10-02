@@ -73,7 +73,7 @@ The following models are used :
 * Baseline :  It uses the current movement as the prediction. It is also known as peristence.
 * Perfect  :  This is a hypothetical model. It correctly predicts all the movements.
 * Imperfect : This is a hypothetical model. It incorrectly predicts all the movements.
-* UP model : It predicts all movements as UP.
+* UP model : It predicts all movements as UP (This model buys stock in 1999 and holds it till 2019).
 * DW model : It predicts all movements as DOWN (This model never buys any stock !).
 
 Following table summarizes the performance of the models. Transaction costs are ignored in calculating the profit.
