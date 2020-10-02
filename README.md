@@ -90,6 +90,22 @@ The following models are used :
 
 ![](images/monthly_sentiment.png)  ![](images/monthly_overlap_plot.png) 
 
+The accuracy of sentiment model is 0.62 and that of persistence model is 0.60.
+
+Confusion matrices :
+
+|Baseline |     |Pred|Pred  |    | 
+|:-------:|:---:|:--:|:----:|:--:|
+|         |     | UP  |DOWN |TOT | 
+|**TRUE** |UP   | 110 |  52 |15  |
+|**TRUE** |DOWN |  52 |  48 | 5  |
+
+|Sentiment|     |Pred |Pred |    | 
+|:-------:|:---:|:---:|:---:|:--:|
+|         |     | UP  |DOWN |TOT | 
+|**TRUE** |UP   | 142 | 20  |162 |
+|**TRUE** |DOWN |  79 | 21  |100 |
+
 
 
 # Further work
