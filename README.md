@@ -8,6 +8,7 @@ The archive of Wall Street Journal (WSJ) headlines (and articles) since 1998 is 
 https://www.wsj.com/news/archive/years
 
 <p align="justify">
+I scraped these along with their category tag and datetime stamps. I downloaded S&P500's (ticker symbol ^GSPC) stock price timeseries from 2000-2019.
 The sentiment index is calculated for headlines relevant to finance/stock market. The relationship between the average sentiment index and S&P's price movement is investigated for different annual and monthly time scales. Further the question is posed : Does the WSJ headline sentiment index have predictive power in so far as forecasting S&P's price movement is concerned.
 </p>
 
