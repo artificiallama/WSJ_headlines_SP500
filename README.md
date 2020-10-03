@@ -17,7 +17,7 @@ Packages used :
 
 The following shows the number of WSJ articles per year. The relevant articles are those with tags (categories) pertaining to finance/stock (eg. money, market, wealth, stock, business etc).
 
-![](images/narticles_WSJ.png) ![](images/freq_topwords_headlines_perc.png)   ![](images/wordcloud_topwords_5x3.png)
+![](images/narticles_WSJ.png) 
 
 The tags searched for to determine relevant headlines are :
 'auto','bank','barron', 'business','capital','commod', 'commerce', 'corporate', 'earning','econom', 'energy', 'estate',
@@ -32,12 +32,11 @@ The frequency of words in the relevant headlines are counted. The bar chart and 
 
 VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. The bar chart of annually averaged sentiment index is shown below.
 
-![](images/annual_WSJ_sentiment.png)
+![](images/annual_WSJ_sentiment.png)   ![](images/SP500_daily_close.png)
 
 The following shows S&P500 index over same time period (1998-2020). Comparing the above sentiment index bar chart to the following figure it is clear that the negative sentiment in years 2002 and 2008 correlates strongly with the price drop around the same point in time.
 
-![](images/SP500_daily_close.png)   ![](images/annual_average_sp500.png)
-
+![](images/annual_average_sp500.png)  ![](images/sentiment_price.png) 
 
 The time varying S&P500 price is converted to price movement (i.e. gradient). The price movement is quantified by subtracting consecutive closing prices. The first entry corresponds to 1999 which is given by price(1999)-price(1998). The last entry corresponds to 2019 which is given by price(2019)-price(2018). 
 There exists a strong correlation between the sentiment index and the price movement. However this correlation is between the sentiment and price of the same year. The key question is : **Does the sentiment index of a particular year correctly predict the movement for the next year ?** One of the important predictions traders are interested in is whether the price increases or decreases in the future. They are also interested in the price in the future but minimally they are interested in knowing the movement which helps them to decide whether to go short or long in the stock. Apart from the sign of the gradient it is important to predict the magnitude of the gradient too. The models in this work predicts the sign of the gradient (which though basic is a non-trivial problem). Further, a *gradient metric* and *backtrading* is used to verify if the model predicted sign, on an average, gives good performance in terms of the magnitude of the movement. A better hit rate in terms of predicting the movements need not translate into a better performance in terms of profit accrued. This is because the correctly predicted movements (by particular model) could have small magnitude movements. On the other hand, another model could have fewer number of correctly predicted movements but with associated higher magnitude of movements.
