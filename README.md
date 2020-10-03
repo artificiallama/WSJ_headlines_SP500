@@ -52,9 +52,9 @@ The sentiment model uses the sentiment index for year N to predict the movement 
 
 Confusion matrices :
 
-|**Baseline** |     |Pred|Pred |     |      |**Sentiment**|     |Pred|Pred|    | 
-|:-----------:|:---:|:--:|:---:|:---:|------|:-----------:|:---:|:--:|:--:|:--:|
-|             |     | UP |DOWN |TOT  |      |             |     | UP |DOWN|TOT | 
+|**Baseline** |     |Pred    |Pred     |     |      |**Sentiment**|     |Pred    |Pred    |    | 
+|:-----------:|:---:|:------:|:-------:|:---:|------|:-----------:|:---:|:------:|:------:|:--:|
+|             |     | UP     |DOWN     |TOT  |      |             |     | UP     |DOWN    |TOT | 
 |**TRUE**     |UP   | **13** |  **2**  |15   |      |**TRUE**     |UP   | **15** |  **0** |15  |
 |**TRUE**     |DOWN |  **2** |  **3**  | 5   |      |**TRUE**     |DOWN |  **3** |  **2** | 5  |
 
