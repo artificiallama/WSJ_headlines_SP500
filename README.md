@@ -25,6 +25,10 @@ The tags searched for to determine relevant headlines are :
 'logistics','market','money','oil', 'price','property', 'share', 'stock', 'street', 'tax','tech', 'telecom',
 'trade','treasur','value','venture','wealth','wall','worth'
 
+<br>
+<br>
+<br>
+<br>
 
 The frequency of words in the relevant headlines are counted. The bar chart and wordcloud of top few words is shown below.
 
