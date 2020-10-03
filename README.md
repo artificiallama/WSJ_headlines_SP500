@@ -102,6 +102,16 @@ Confusion matrices :
 |**TRUE**     |DOWN |  **52** |  **48**  | 100|    |**TRUE**      |DOWN |  **79** |  **21**  | 100 |
 
 
+Following table summarizes the performance of the models. Transaction costs are ignored in calculating the profit.
+
+
+|                     | *sentiment* |*Baseline*|Perfect | Imperfect | UP model | DW model |
+|:-------------------:|:-----------:|:--------:|:------:|:---------:|:--------:|:--------:|
+|**Cash   (USD)**     | 4986        |  4700    | 67873  | 47        | 3176     | 1023     |
+|**Net Profit (USD)** | 3962        |  3676    | 66849  | -975      | 2153     | 0        |
+|**% Net Profit**     |  387        |  359     | 6529   | -95       | 210      | 0        |
+
+The sentiment model outperforms the baseline (persistence) model by about 28% in net profit. The perfect model performs the best by design. The buy and hold model returns 210%.
 
 
 # Further work
