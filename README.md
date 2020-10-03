@@ -17,6 +17,8 @@ Packages used :
 
 The following shows the number of WSJ articles per year. The relevant articles are those with tags (categories) pertaining to finance/stock (eg. money, market, wealth, stock, business etc).
 
+<img align="right" width="100" height="100" src="images/narticles_WSJ.png">
+
 ![](images/narticles_WSJ.png) 
 
 The tags searched for to determine relevant headlines are :
