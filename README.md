@@ -89,18 +89,23 @@ The sentiment model outperforms the baseline (persistence) model by about 42% in
 
 # Monthly timescale
 
+The monthly timescale prediction follows the same stencile as that of the annual timescale. The only difference is that the monthly averaged sentiment is used to predict the next month's closing price. The persistence model uses the current movement to predict the next month's movement. The first prediction is for March 1998. There are a total of 262 predictions.
+
 ![](images/monthly_sentiment.png)  ![](images/monthly_overlap_plot.png) 
 
 The accuracy of sentiment model is 0.62 and that of persistence model is 0.60.
 
 Confusion matrices :
 
-|**Baseline** |     |Pred |Pred  |    |    |**Sentiment** |     |Pred |Pred  |     |
-|:-----------:|:---:|:---:|:----:|:--:|:--:|:------------:|:---:|:---:|:----:|:---:|
-|             |     | UP  |DOWN  |TOT |    |              |     | UP  |DOWN  | TOT |
-|**TRUE**     |UP   | **110** |  **52**  |162 |    |**TRUE**      |UP   | **142** |  **20**  |162  |
-|**TRUE**     |DOWN |  **52** |  **48**  | 100|    |**TRUE**      |DOWN |  **79** |  **21**  | 100 |
+|**Baseline** |     |Pred     |Pred      |    |    |**Sentiment** |     |Pred     |Pred     |     |
+|:-----------:|:---:|:-------:|:--------:|:--:|:--:|:------------:|:---:|:-------:|:-------:|:---:|
+|             |     | UP      |DOWN      |TOT |    |              |     | UP      |DOWN     | TOT |
+|**TRUE**     |UP   | **110** |  **52**  |162 |    |**TRUE**      |UP   | **142** |  **20** |162  |
+|**TRUE**     |DOWN |  **52** |  **48**  | 100|    |**TRUE**      |DOWN |  **79** |  **21** | 100 |
 
+The sentiment model is better at predicting upwards movement (142/162) compared to the persistence model (110/162). The sentiment model is worse at predicting downward movements (21/100). This is clearly seen in the following figures which shows movements corresponding to wrong predictions by each of the two models. Note that for the persistence model large magnitude wrong predictions occur earlier (1998-1999) than for the sentiment model. Because of the compounding effect this adversely impact the return of the persistence model. The peristence model produces an equal number of wrong predictions for the two categories which results in a symmetric distribution of blue crosses around the zero line. On the other hand the sentiment model produces far more wrong predictions when the actual movement is downwards. From the confusion matrix it is clear that out of 100 actual downward movements, it (wrongly) classifies 79 !
+
+![](images/monthly_wrong_senti.png)  ![](images/monthly_wrong_persi.png) 
 
 Following table summarizes the performance of the models. Transaction costs are ignored in calculating the profit.
 
