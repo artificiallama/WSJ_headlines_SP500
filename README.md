@@ -28,7 +28,11 @@ The tags searched for to determine relevant headlines are :
 
 The frequency of words in the relevant headlines are counted. The bar chart and wordcloud of top few words is shown below.
 
+<img align="left" width="400" height="300" src="images/freq_topwords_headlines_perc.png"> <img align="right" width="200" height="200" src="images/wordcloud_topwords_5x3.png">
+
+<!--
 ![](images/freq_topwords_headlines_perc.png)   ![](images/wordcloud_topwords_5x3.png)
+-->
 
 VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. The bar chart of annually averaged sentiment index is shown below.
 
