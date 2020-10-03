@@ -59,7 +59,7 @@ Confusion matrices :
 |**TRUE**     |DOWN |  **2** |  **3**  | 5   |      |**TRUE**     |DOWN |  **3** |  **2** | 5  |
 
 The sentiment model incorrectly predicts 3 downs as ups. The persistence model incorrectly predicts 2 ups and 2 downs. The following figures shows these misses. Both the models
-make wrong predictions about the downward movement in 2001 and 2008. The sentiment model incorrectly predicts the downward movement of 2002 as upward whose magnitude is -200 USD. The persistence model makes wrong prediction about 2004 and 2010 whose magnitudes are 165 and 191 USD. A metric is calculated which takes into account both the sign and magnitude of the predicted movement. This metric is named the *gradient metric*. For a given model, the gradient metric is calculated as follows. For each correct prediction the absolute value of the movement is added while for a wrong prediction the absolute value is subtracted. The gradient metric for the sentiment and the persistence model is $2187 and $1873. Thus not only is the sentiment model more correct than the persistence model in predicting the sign of movement but it also, on balance turns out to be better in terms of magnitude. Considering the gradient metric, one would expect the sentiment model to perform better in a backtrading algorithm.
+make wrong predictions about the downward movement in 2001 and 2008. The sentiment model incorrectly predicts the downward movement of 2002 as upward whose magnitude is -200 USD. The persistence model makes wrong prediction about 2004 and 2010 whose magnitudes are 165 and 191 USD. A metric is calculated which takes into account both the sign and magnitude of the predicted movement. This metric is named the *gradient metric*. For a given model, the gradient metric is calculated as follows. For each correct prediction the absolute value of the movement is added while for a wrong prediction the absolute value is subtracted. The gradient metric for the sentiment and the persistence model is $2187 and $1873. However the gradient metric does not include information about the timing of the right/wrong prediction. If for a particular model all the wrong predictions are concentrated at the begining of the trading (between say 2000 and 2005) it will generate much worse returns than if they were concentrated towards the end, all other things being equal. This is because of the compounding effect. The best way to quantify  the performance of any model is backtrading. It includes the effect of the sign of movement, its magnitude and its timing.
 
 ![](images/annual_hit_miss.png)
 
@@ -68,12 +68,12 @@ make wrong predictions about the downward movement in 2001 and 2008. The sentime
 I have used a basic trading algorithm. The trading starts in 1999. The first prediction is for year 2000. The last trade is in 2018 based on the prediction for 2019. In 2019 the stocks (if any) are sold and converted to cash. The first trade (1999) is either buying one stock of S&P500 or holding cash equivalent of one stock depending on if the prediction is positive price movement (UP) or negative price movement (DOWN). At any given year, for a given model if the prediction is UP for next year all cash is converted to stock. At any given year, for a given model if the prediction is DOWN for next year all stock is converted to cash. However, if the prediction of the model is the same as the last year, the positions are held. For example if the prediction is UP for a given year and if last year the prediction was also UP, then the stocks bought last year are held. The initial investment for all models is the price of stock in 1999. This investment is $1327.3. The closing price in 2019 is $2913.4. 
 
 The following models are used :
-* Sentiment : It uses the current sentiment index to predict the next year.
-* Baseline :  It uses the current movement as the prediction. It is also known as peristence.
-* Perfect  :  This is a hypothetical model. It correctly predicts all the movements.
-* Imperfect : This is a hypothetical model. It incorrectly predicts all the movements.
-* UP model : It predicts all movements as UP (This model buys stock in 1999 and holds it till 2019).
-* DW model : It predicts all movements as DOWN (This model never buys any stock !).
+* **Sentiment** : It uses the current sentiment index to predict the next year.
+* **Baseline** :  It uses the current movement as the prediction. It is also known as peristence.
+* **Perfect**  :  This is a hypothetical model. It correctly predicts all the movements.
+* **Imperfect** : This is a hypothetical model. It incorrectly predicts all the movements.
+* **UP model** : It predicts all movements as UP (This model buys stock in 1999 and holds it till 2019).
+* **DW model** : It predicts all movements as DOWN (This model never buys any stock !).
 
 Following table summarizes the performance of the models. Transaction costs are ignored in calculating the profit.
 
@@ -107,7 +107,8 @@ The sentiment model is better at predicting upwards movement (142/162) compared 
 
 ![](images/monthly_wrong_senti.png)  ![](images/monthly_wrong_persi.png) 
 
-Following table summarizes the performance of the models. Transaction costs are ignored in calculating the profit.
+The gradient metric is 2486 and 2563 for the sentiment and the persistence model respectively. Though the persistence model is better according to the gradient model, the sentiment model wins in backtrading. This is most probably because of the time distribution of the wrong predictions as shown above.
+Following table summarizes the performance of the models in backtrading. Transaction costs are ignored in calculating the profit.
 
 
 |                     | *sentiment* |*Baseline*|Perfect | Imperfect | UP model | DW model |
