@@ -40,7 +40,11 @@ The frequency of words in the relevant headlines are counted. The bar chart and 
 ![](images/freq_topwords_headlines_perc.png)   ![](images/wordcloud_topwords_5x3.png)
 
 
-VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. The bar chart of annually averaged sentiment index is shown below.
+VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. 
+
+# Annual timescale
+
+The bar chart of annually averaged sentiment index is shown below.
 
 ![](images/annual_WSJ_sentiment.png)   ![](images/SP500_daily_close.png)
 
@@ -72,7 +76,9 @@ make wrong predictions about the downward movement in 2001 and 2008. The sentime
 
 ## Backtrading (Annual timescale)
 
+<p align="justify">
 I have used a basic trading algorithm. The trading starts in 1999. The first prediction is for year 2000. The last trade is in 2018 based on the prediction for 2019. In 2019 the stocks (if any) are sold and converted to cash. The first trade (1999) is either buying one stock of S&P500 or holding cash equivalent of one stock depending on if the prediction is positive price movement (UP) or negative price movement (DOWN). At any given year, for a given model if the prediction is UP for next year all cash is converted to stock. At any given year, for a given model if the prediction is DOWN for next year all stock is converted to cash. However, if the prediction of the model is the same as the last year, the positions are held. For example if the prediction is UP for a given year and if last year the prediction was also UP, then the stocks bought last year are held. The initial investment for all models is the price of stock in 1999. This investment is $1327.3. The closing price in 2019 is $2913.4. 
+</p>
 
 The following models are used :
 * **Sentiment** : It uses the current sentiment index to predict the next year.
@@ -110,12 +116,16 @@ Confusion matrices :
 |**TRUE**     |UP   | **110** |  **52**  |162 |    |**TRUE**      |UP   | **142** |  **20** |162  |
 |**TRUE**     |DOWN |  **52** |  **48**  | 100|    |**TRUE**      |DOWN |  **79** |  **21** | 100 |
 
+<p align="justify">
 The sentiment model is better at predicting upwards movement (142/162) compared to the persistence model (110/162). The sentiment model is worse at predicting downward movements (21/100). This is clearly seen in the following figures which shows movements corresponding to wrong predictions by each of the two models. Note that for the persistence model large magnitude wrong predictions occur earlier (1998-1999) than for the sentiment model. Because of the compounding effect this adversely impact the return of the persistence model. The peristence model produces an equal number of wrong predictions for the two categories which results in a symmetric distribution of blue crosses around the zero line. On the other hand the sentiment model produces far more wrong predictions when the actual movement is downwards. From the confusion matrix it is clear that out of 100 actual downward movements, it (wrongly) classifies 79 !
+</p>
 
 ![](images/monthly_wrong_persi.png)  ![](images/monthly_wrong_senti.png) 
 
+<p align="justify">
 The gradient metric is 2486 and 2563 for the sentiment and the persistence model respectively. Though the persistence model is better according to the gradient model, the sentiment model wins in backtrading. This is most probably because of the time distribution of the wrong predictions as shown above.
 Following table summarizes the performance of the models in backtrading. Transaction costs are ignored in calculating the profit.
+</p>
 
 
 |                     | *sentiment* |*Baseline*|Perfect | Imperfect | UP model | DW model |
