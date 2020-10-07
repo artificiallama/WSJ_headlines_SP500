@@ -121,7 +121,7 @@ The sentiment model is better at predicting upwards movement (142/162) compared 
 </p>
 
 ![](images/monthly_wrong_persi.png)  ![](images/monthly_wrong_senti.png) 
-![](images/2010-2018.png)
+![](images/move_2010-2018.png)
 
 <p align="justify">
 The gradient metric is 2486 and 2563 for the sentiment and the persistence model respectively. Though the persistence model is better according to the gradient model, the sentiment model wins in backtrading. This is most probably because of the time distribution of the wrong predictions as shown above.
