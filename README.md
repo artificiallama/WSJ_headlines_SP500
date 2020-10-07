@@ -135,7 +135,7 @@ Following table summarizes the performance of the models in backtrading. Transac
 |**% Net Profit**     |  387        |  359     | 6529   | -95       | 210      | 0        |
 
 The sentiment model outperforms the baseline (persistence) model by about 28% in net profit. The perfect model performs the best by design. The buy and hold model returns 210%.
-
+Comparing the monthly and annual timescale trading, though the accuracy of both the models has decreased from about 0.8 to 0.6 the net profit has increased by 1.56 for the sentiment model and by 1.87 for the baseline model.
 
 # Further work
 
