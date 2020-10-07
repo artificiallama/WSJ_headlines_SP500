@@ -124,7 +124,7 @@ The sentiment model is better at predicting upwards movement (142/162) compared 
 
 <p align="justify">
 The gradient metric is 2486 and 2563 for the sentiment and the persistence model respectively. Though the persistence model is better according to the gradient model, the sentiment model wins in backtrading. This is most probably because of the time distribution of the wrong predictions as shown above.
-Following table summarizes the performance of the models in backtrading. Transaction costs are ignored in calculating the profit.
+Following table summarizes the performance of the models in backtrading. Transaction costs are ignored in calculating the profit. The initial investment is $1023.7 which is the price of the stock in February 1998.
 </p>
 
 
