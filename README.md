@@ -125,12 +125,14 @@ Confusion matrices :
 The sentiment model is better at predicting upwards movement (142/162) compared to the persistence model (110/162). The sentiment model is worse at predicting downward movements (21/100). This is clearly seen in the following figures which shows movements corresponding to wrong predictions by each of the two models. Note that for the persistence model large magnitude wrong predictions occur earlier (1998-1999) than for the sentiment model. Because of the compounding effect this adversely impact the return of the persistence model. The peristence model produces an equal number of wrong predictions for the two categories which results in a symmetric distribution of blue crosses around the zero line. On the other hand the sentiment model produces far more wrong predictions when the actual movement is downwards. From the confusion matrix it is clear that out of 100 actual downward movements, it (wrongly) classifies 79 !
 </p>
 
-![](images/monthly_wrong_persi.png)  ![](images/monthly_wrong_senti.png) 
-![](images/move_2010-2018.png)
+<img align="left" width="400" height="300" src="images/monthly_wrong_persi.png">
+
+<img align="left" width="500" height="300" src="images/monthly_wrong_senti.png">
+
+<img align="left" width="500" height="300" src="images/move_2010-2018.png">
 
 <p align="justify">
-The gradient metric is 2486 and 2563 for the sentiment and the persistence model respectively. Though the persistence model is better according to the gradient model, the sentiment model wins in backtrading. This is most probably because of the time distribution of the wrong predictions as shown above.
-Following table summarizes the performance of the models in backtrading. Transaction costs are ignored in calculating the profit. The initial investment is $1023.7 which is the price of the stock in February 1998.
+The gradient metric is 2486 and 2563 for the sentiment and the persistence model respectively. Though the persistence model is better according to the gradient model, the sentiment model wins in backtrading. This is most probably because of the time distribution of the wrong predictions as shown above. The large magnitude errors for the persistence model occur earlier (1998-1999). Following table summarizes the performance of the models in backtrading. Transaction costs are ignored in calculating the profit. The initial investment is $1023.7 which is the price of the stock in February 1998.
 </p>
 
 
