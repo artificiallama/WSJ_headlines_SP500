@@ -1,5 +1,5 @@
 # WSJ_headlines_SP500
-Investigate predictive power of sentiment of financial headlines with respect to  S&amp;P500 price movement.
+Investigate the predictive power of sentiment of Wall Street Journal financial headlines with respect to  S&amp;P500 price movement.
 
 # Introduction
 
@@ -142,7 +142,7 @@ Comparing the monthly and annual timescale trading, though the accuracy of both 
 * Collect archived news headlines from other sources which are relevant to S&P500
 * Rather than considering only the headline, process the whole article and flesh out sentences relevant to S&P500.
 * Trace back the average negative (eg. 2002, 2008) and positive (2000, 2005, 2014) sentiments to particular news articles and ask the question - is this just luck or the headline had something to do with S&P500 ?
-* Predict and backtrade on daily timescale
+* Predict and backtrade on daily timescale. I anticipate a further drop in accuracy compared to the monthly timescale.
 * Use another sentiment model (eg. FinBERT) - are the results consistent with those obtained ?
 
 # References
