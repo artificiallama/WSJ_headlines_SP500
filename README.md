@@ -37,13 +37,13 @@ The tags searched for to determine relevant headlines are :
 The frequency of words in the relevant headlines are counted. The bar chart and wordcloud of top few words is shown below.
 
 
-![](images/freq_topwords_headlines_perc.png)   ![](images/wordcloud_topwords_5x3.png)
+<img align="left" width="400" height="300" src="images/freq_topwords_headlines_perc.png">
 
-
-VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. 
+<img align="right" width="400" height="300" src="images/wordcloud_topwords_5x3.png">
 
 # Annual timescale
 
+VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. 
 The bar chart of annually averaged sentiment index is shown below.
 
 ![](images/annual_WSJ_sentiment.png)   ![](images/SP500_daily_close.png)
@@ -127,7 +127,7 @@ The sentiment model is better at predicting upwards movement (142/162) compared 
 
 <img align="left" width="400" height="300" src="images/monthly_wrong_persi.png">
 
-<img align="left" width="500" height="300" src="images/monthly_wrong_senti.png">
+<img align="left" width="400" height="300" src="images/monthly_wrong_senti.png">
 
 <img align="left" width="500" height="300" src="images/move_2010-2018.png">
 
