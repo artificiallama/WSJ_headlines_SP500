@@ -109,9 +109,11 @@ The sentiment model outperforms the baseline (persistence) model by about 42% in
 
 The monthly timescale prediction follows the same stencile as that of the annual timescale. The only difference is that the monthly averaged sentiment is used to predict the next month's closing price. The persistence model uses the current movement to predict the next month's movement. The first prediction is for March 1998. There are a total of 262 predictions. The following figures show the temporal evolution of the monthly averaged sentiment and movement.
 
-<img align="left" width="400" height="300" src="images/monthly_sentiment.png">
+<p align="left">
+<img  width="400" height="300" src="images/monthly_sentiment.png">
 
-<img align="left" width="500" height="300" src="images/monthly_overlap_plot.png">
+<img  width="500" height="300" src="images/monthly_overlap_plot.png">
+</p>
 
 The accuracy of sentiment model is 0.62 and that of persistence model is 0.60.
 <br>
