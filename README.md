@@ -41,6 +41,12 @@ The frequency of words in the relevant headlines are counted. The bar chart and 
 
 <img align="right" width="400" height="300" src="images/wordcloud_topwords_5x3.png">
 
+
+<br>
+<br>
+<br>
+<br>
+
 # Annual timescale
 
 VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. 
