@@ -116,12 +116,7 @@ The monthly timescale prediction follows the same stencile as that of the annual
 <img  width="500" height="300" src="images/monthly_overlap_plot.png">
 </p>
 
-The accuracy of sentiment model is 0.62 and that of persistence model is 0.60.
-<br>
-<br>
-<br>
-
-Confusion matrices :
+The accuracy of sentiment model is 0.62 and that of persistence model is 0.60. The confusion matrices are,
 
 |**Baseline** |     |Pred     |Pred      |    |    |**Sentiment** |     |Pred     |Pred     |     |
 |:-----------:|:---:|:-------:|:--------:|:--:|:--:|:------------:|:---:|:-------:|:-------:|:---:|
