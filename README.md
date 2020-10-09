@@ -48,7 +48,11 @@ The frequency of words in the relevant headlines are counted. The bar chart and 
 VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. 
 The bar chart of annually averaged sentiment index is shown below.
 
-![](images/annual_WSJ_sentiment.png)   ![](images/SP500_daily_close.png)
+<p align="left">
+<img  width="400" height="300" src="annual_WSJ_sentiment.png">
+
+<img  width="500" height="300" src="images/SP500_daily_close.png">
+</p>
 
 The following shows S&P500 index over same time period (1998-2020). Comparing the above sentiment index bar chart to the following figure it is clear that the negative sentiment in years 2002 and 2008 correlates strongly with the price drop around the same point in time.
 
