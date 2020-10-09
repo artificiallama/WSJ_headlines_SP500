@@ -130,9 +130,11 @@ Confusion matrices :
 The sentiment model is better at predicting upwards movement (142/162) compared to the persistence model (110/162). The sentiment model is worse at predicting downward movements (21/100). This is clearly seen in the following figures which shows movements corresponding to wrong predictions by each of the two models. Note that for the persistence model large magnitude wrong predictions occur earlier (1998-1999) than for the sentiment model. Because of the compounding effect this adversely impact the return of the persistence model. The peristence model produces an equal number of wrong predictions for the two categories which results in a symmetric distribution of blue crosses around the zero line. On the other hand the sentiment model produces far more wrong predictions when the actual movement is downwards. From the confusion matrix it is clear that out of 100 actual downward movements, it (wrongly) classifies 79 !
 </p>
 
-<img align="left" width="400" height="300" src="images/monthly_wrong_persi.png">
+<p align="left">
+<img width="400" height="300" src="images/monthly_wrong_persi.png">
 
-<img align="left" width="400" height="300" src="images/monthly_wrong_senti.png">
+<img width="400" height="300" src="images/monthly_wrong_senti.png">
+</p>
 
 <img align="left" width="500" height="300" src="images/move_2010-2018.png">
 
