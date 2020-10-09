@@ -36,11 +36,13 @@ The tags searched for to determine relevant headlines are :
 <br>
 The frequency of words in the relevant headlines are counted. The bar chart and wordcloud of top few words is shown below.
 
+<p align="left">
+<img width="400" height="300" src="images/freq_topwords_headlines_perc.png">
+</p>
 
-<img align="left" width="400" height="300" src="images/freq_topwords_headlines_perc.png">
-
-<img align="left" width="300" height="200" src="images/wordcloud_topwords_5x3.png">
-
+<p align="right">
+<img width="300" height="200" src="images/wordcloud_topwords_5x3.png">
+</p>
 
 <br>
 <br>
