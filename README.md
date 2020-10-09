@@ -49,9 +49,9 @@ VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is us
 The bar chart of annually averaged sentiment index is shown below.
 
 <p align="left">
-<img  width="400" height="300" src="annual_WSJ_sentiment.png">
+<img  width="400" height="300" src="images/annual_WSJ_sentiment.png">
 
-<img  width="500" height="300" src="images/SP500_daily_close.png">
+<img  width="400" height="300" src="images/SP500_daily_close.png">
 </p>
 
 The following shows S&P500 index over same time period (1998-2020). Comparing the above sentiment index bar chart to the following figure it is clear that the negative sentiment in years 2002 and 2008 correlates strongly with the price drop around the same point in time.
