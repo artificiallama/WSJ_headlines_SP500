@@ -42,13 +42,10 @@ The frequency of words in the relevant headlines are counted. The bar chart and 
 </p>
 
 <br>
-<br>
-<br>
-<br>
 
 # Annual timescale
 
-VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate the sentiment score for each headline. 
+VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate &nbsp the sentiment score for each headline. 
 The bar chart of annually averaged sentiment index is shown below.
 
 ![](images/annual_WSJ_sentiment.png)   ![](images/SP500_daily_close.png)
