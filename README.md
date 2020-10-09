@@ -45,7 +45,7 @@ The frequency of words in the relevant headlines are counted. The bar chart and 
 
 # Annual timescale
 
-VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate &nbsp; the sentiment score for each headline. 
+VADER (Valence Aware Dictionary and sEntiment Reasoner) Sentiment analyser is used to calculate &emsp; the sentiment score for each headline. 
 The bar chart of annually averaged sentiment index is shown below.
 
 ![](images/annual_WSJ_sentiment.png)   ![](images/SP500_daily_close.png)
@@ -65,11 +65,11 @@ The sentiment model uses the sentiment index for year N to predict the movement 
 
 Confusion matrices :
 
-|**Baseline** |     |Pred    |Pred     |     |      |**Sentiment**|     |Pred    |Pred    |    | 
-|:-----------:|:---:|:------:|:-------:|:---:|------|:-----------:|:---:|:------:|:------:|:--:|
-|             |     | UP     |DOWN     |TOT  |      |             |     | UP     |DOWN    |TOT | 
-|**TRUE**     |UP   | **13** |  **2**  |15   |      |**TRUE**     |UP   | **15** |  **0** |15  |
-|**TRUE**     |DOWN |  **2** |  **3**  | 5   |      |**TRUE**     |DOWN |  **3** |  **2** | 5  |
+&emsp; |**Baseline** |     |Pred    |Pred     |     |      |**Sentiment**|     |Pred    |Pred    |    | 
+&emsp; |:-----------:|:---:|:------:|:-------:|:---:|------|:-----------:|:---:|:------:|:------:|:--:|
+&emsp; |             |     | UP     |DOWN     |TOT  |      |             |     | UP     |DOWN    |TOT | 
+&emsp; |**TRUE**     |UP   | **13** |  **2**  |15   |      |**TRUE**     |UP   | **15** |  **0** |15  |
+&emsp; |**TRUE**     |DOWN |  **2** |  **3**  | 5   |      |**TRUE**     |DOWN |  **3** |  **2** | 5  |
 
 The sentiment model incorrectly predicts 3 downs as ups. The persistence model incorrectly predicts 2 ups and 2 downs. The following figures shows these misses. Both the models
 make wrong predictions about the downward movement in 2001 and 2008. The sentiment model incorrectly predicts the downward movement of 2002 as upward whose magnitude is -200 USD. The persistence model makes wrong prediction about 2004 and 2010 whose magnitudes are 165 and 191 USD. A metric is calculated which takes into account both the sign and magnitude of the predicted movement. This metric is named the *gradient metric*. For a given model, the gradient metric is calculated as follows. For each correct prediction the absolute value of the movement is added while for a wrong prediction the absolute value is subtracted. The gradient metric for the sentiment and the persistence model is $2187 and $1873. However the gradient metric does not include information about the timing of the right/wrong prediction. If for a particular model all the wrong predictions are concentrated at the begining of the trading (between say 2000 and 2005) it will generate much worse returns than if they were concentrated towards the end, all other things being equal. This is because of the compounding effect. The best way to quantify  the performance of any model is backtrading. It includes the effect of the sign of movement, its magnitude and its timing.
