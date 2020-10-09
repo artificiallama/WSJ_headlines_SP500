@@ -39,7 +39,7 @@ The frequency of words in the relevant headlines are counted. The bar chart and 
 
 <img align="left" width="400" height="300" src="images/freq_topwords_headlines_perc.png">
 
-<img align="right" width="400" height="300" src="images/wordcloud_topwords_5x3.png">
+<img align="left" width="300" height="200" src="images/wordcloud_topwords_5x3.png">
 
 
 <br>
