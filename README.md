@@ -162,6 +162,7 @@ The sentiment based prediction is better than the baseline (momentum) based mode
 * Trace back the average negative (eg. 2002, 2008) and positive (2000, 2005, 2014) sentiments to particular news articles and ask the question - is this just luck or the headline had something to do with S&P500 ?
 * Predict and backtrade on daily timescale. I anticipate a further drop in accuracy compared to the monthly timescale.
 * Use another sentiment model (eg. FinBERT) - are the results consistent with those obtained ?
+* The methods give_articles_nextpages() and give_articles() in wsj_scrape_requests2.ipynb can be merged to make the code shorter.
 
 # References
 https://towardsdatascience.com/stock-news-sentiment-analysis-with-python-193d4b4378d4
