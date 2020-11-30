@@ -1,5 +1,5 @@
 # WSJ_headlines_SP500
-Investigate the predictive power of sentiment of Wall Street Journal financial headlines with respect to  S&amp;P500 price movement. How good is the sentiment averaged over a year (month) at predicting the price movement of the next year (month)? How does it compare with the prediction from a baseline model ?
+Investigate the predictive power of sentiment of Wall Street Journal financial headlines with respect to  S&amp;P500 price movement. How good is the sentiment averaged over a year (month) at predicting the price movement of the next year (month) ? How does it compare with the prediction from a baseline model ?
 
 # Introduction
 
