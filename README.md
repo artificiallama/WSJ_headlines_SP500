@@ -155,7 +155,7 @@ Comparing the monthly and annual timescale trading, though the accuracy of both 
 
 # Conclusion and further work
 
-The sentiment based prediction is better than the baseline (momentum) based model on both monthly and annual timescales. The sentiment based model outperforms the baseline model by 28% and 42% in backtrading on the monthly and annual timescale respectively.
+The sentiment based prediction is better than the baseline (momentum) based model on both monthly and annual timescales. The sentiment based model outperforms the baseline model by 28% and 42% in backtrading on the monthly and annual timescale respectively. The following ideas can be explored in future work :
 
 * Collect archived news headlines from other sources which are relevant to S&P500
 * Rather than considering only the headline, process the whole article and flesh out sentences relevant to S&P500.
